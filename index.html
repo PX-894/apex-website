@@ -1,41 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Page Footer Example</title>
     <style>
-        /* Add some basic CSS for styling the footer */
-        footer {
-            text-align: center;
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-        }
-    </style>
-     <meta charset="UTF-8">
+        /* Reset some default styles for better consistency */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #444;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Text color classes */
+.tech-text {
+    color: #ff5722; /* Orange */
+}
+
+.highlight-text {
+    color: #4caf50; /* Green */
+}
+
+.blue-text {
+    color: #2196f3; /* Blue */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Responsive design */
+@media screen and (max-width: 600px) {
+    nav ul {
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+        </style>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Page Title</title>
-    <meta name="description" content="A brief description of your web page">
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS stylesheet -->
-    <script src="script.js" defer></script> <!-- Link to your JavaScript file -->
+    <title>Tech World</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Content of your web page -->
-    
+    <header>
+        <h1>Welcome to <span class="tech-text">Apex Tech</span></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="main-content">
+        <article>
+            <h2>Latest Tech News</h2>
+            <p class="highlight-text">Stay updated with the most exciting tech developments.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel bibendum mi.</p>
+        </article>
+        <article>
+            <h2>Product Reviews</h2>
+            <p class="blue-text">In-depth reviews of the latest gadgets and devices.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel bibendum mi.</p>
+        </article>
+    </section>
     <footer>
-        <p>&copy; <span id="copyright-year"></span> Your Company Name</p>
+        <p>&copy; 2023 ApexTech World</p>
     </footer>
-
-    <!-- JavaScript code -->
-    <script>
-        // Get the current year
-        const currentYear = new Date().getFullYear();
-
-        // Find the <span> element with the ID "copyright-year" in the footer
-        const copyrightYearElement = document.getElementById('copyright-year');
-
-        // Set the inner text of the <span> element to the current year
-        copyrightYearElement.textContent = currentYear;
-    </script>
-    <!-- The content of your web page goes here -->
 </body>
 </html>
